@@ -12,4 +12,8 @@ def home_page_view(request):
     # The first argument is the request object.
     # The second argument is the path to the template, relative to the 
     # templates directory defined in the settings.
-    return render(request, 'pages/home.html')
+    return render(request, 'pages/index.html')
+
+def class_options_view(request):
+    # This renders the new template (we'll create this next)
+    return render(request, 'pages/class_options.html')

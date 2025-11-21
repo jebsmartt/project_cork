@@ -1,0 +1,42 @@
+{% extends "pages/base.html" %} 
+
+{% block title %}Class Options and Schedules{% endblock %}
+
+{% block content %}
+    <section class="class-options-section">
+        <h2>Available Class Schedules</h2>
+        <p>Choose the option that best fits your weekly schedule. Click "Register" to start the sign-up process.</p>
+
+        <table class="schedule-table">
+            <thead>
+                <tr>
+                    <th>Schedule Option</th>
+                    <th>Days Included</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Option 1 (Part-Time)</td>
+                    <td>**Monday & Tuesday**</td>
+                    <td><a href="/signup/" class="table-button">Register</a></td>
+                </tr>
+                <tr>
+                    <td>Option 2 (Part-Time)</td>
+                    <td>**Thursday & Friday**</td>
+                    <td><a href="/signup/" class="table-button">Register</a></td>
+                </tr>
+                <tr>
+                    <td>Option 3 (Full-Time)</td>
+                    <td>**Monday, Tuesday, Thursday, & Friday**</td>
+                    <td><a href="/signup/" class="table-button">Register</a></td>
+                </tr>
+                <tr>
+                    <td>Option 4 (Flexible)</td>
+                    <td>**Select Any Two Days**</td>
+                    <td><a href="/signup/" class="table-button">Contact for Flex Plan</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+{% endblock content %}
