@@ -1,11 +1,15 @@
 # pages/views.py
 
 from django.shortcuts import render
-from django.http import HttpResponse
+
 
 def home_page_view(request):
     """
-    A simple view function that returns an HTTP response 
-    containing the text 'Hello, World!'.
+    Renders the 'pages/home.html' template file.
+    The 'render' shortcut automatically finds the template 
+    and returns an HttpResponse containing its content.
     """
-    return HttpResponse("<h1>Hello, World! (Django)</h1>")
+    # The first argument is the request object.
+    # The second argument is the path to the template, relative to the 
+    # templates directory defined in the settings.
+    return render(request, 'pages/home.html')
