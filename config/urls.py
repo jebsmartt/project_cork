@@ -20,6 +20,12 @@ from django.urls import path, include
 urlpatterns = [
     path("admin/", admin.site.urls),
 
+    # This path is standard and includes all login, logout, password reset views
+    path('accounts/', include('django.contrib.auth.urls')),
+
+    # Custom sign-up URL from the 'accounts' app
+    path('accounts/', include('accounts.urls')),
+
     # Route the site's root URL ('') to the pages app's URLs
     path('', include('pages.urls')),
 ]
